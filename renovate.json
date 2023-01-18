@@ -27,6 +27,8 @@
     "automergeType": "branch"
   },
   "git-submodules": {
-    "enabled": true
+    "enabled": true,
+	"automerge": true,
+    "automergeType": "branch"
   }
 }
