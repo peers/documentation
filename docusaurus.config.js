@@ -49,10 +49,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/peers/documentation/tree/master/',
         },
         blog: false,
         theme: {
@@ -80,7 +78,7 @@ const config = {
           },
           {
             to: 'api',
-            label: 'API reference',
+            label: 'API Reference',
             position: 'left',
           },
           {
@@ -100,22 +98,26 @@ const config = {
                 label: 'Tutorial',
                 to: '/docs/intro',
               },
+              {
+                label: 'API Reference',
+                to: '/api',
+              },
             ],
           },
           {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Github Discussions',
+                href: 'https://github.com/peers/peerjs-server/discussions',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Github Discussions Server',
+                href: 'https://github.com/peers/peerjs-server/discussions',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Telegram',
+                href: 'https://t.me/joinchat/ENhPuhTvhm8WlIxTjQf7Og',
               },
             ],
           },
@@ -124,12 +126,19 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/peers',
+              },
+              {
+                label: 'OpenCollective',
+                href: 'https://opencollective.com/peer',
+              },
+              {
+                label: 'Status Page',
+                href: 'https://status.peerjs.com',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
