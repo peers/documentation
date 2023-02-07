@@ -148,7 +148,7 @@ const config = {
       },
       announcementBar: {
         content:
-            'We are currently revamping our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+            'We are currently revamping our docs, you can find our old and more complete version <a target="_blank" rel="noopener noreferrer" href="https://peerjs.com/docs/">here</a>',
         backgroundColor: '#300934',
         textColor: '#f3e4e4',
         isCloseable: true,
