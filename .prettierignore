@@ -1,0 +1,6 @@
+.pnp.loader.mjs
+.pnp.cjs
+packages
+.docusaurus
+build
+yarn.lock
