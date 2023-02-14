@@ -1,0 +1,74 @@
+---
+sidebar_label: "NestJS"
+sidebar_position: 1
+title: NestJS
+---
+
+```mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+```
+
+### Install PeerServer
+
+If you are using [NestJS](https://docs.nestjs.com) with Express, integrating PeerServer is straightforward.
+Simply install PeerServer from npm:
+
+```mdx-code-block
+<Tabs>
+<TabItem value="yarn">
+```
+
+```bash
+yarn add peer
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="npm">
+```
+
+```bash
+npm install --save peer
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
+
+### PeerServer as a NestJS service
+
+Then add PeerServer as a [NestJS service](https://docs.nestjs.com/providers#services) with the following code:
+
+```ts title="peer-server.service.ts"
+import { Injectable } from "@nestjs/common";
+import { NestExpressApplication } from "@nestjs/platform-express";
+import { ExpressPeerServer } from "peer";
+
+@Injectable()
+export class PeerServerService {
+	enablePeerServer(app: NestExpressApplication) {
+		app.use(
+			ExpressPeerServer(app.getHttpServer(), {
+				// change base path here
+				path: "/peer-server",
+			}),
+		);
+	}
+}
+```
+
+### Provider registration
+
+Finally, add the `PeerServerService` as a [provider](https://docs.nestjs.com/providers#provider-registration) to your `app.module.ts`.
+
+```ts
+import { PeerServerService } from './peer-server.service.js';
+
+@Module({
+  ...
+  providers: [PeerServerService, ...], // <--
+})
+export class AppModule {}
+```
