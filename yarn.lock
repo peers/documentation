@@ -1851,7 +1851,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/plugin-content-docs@npm:2.3.1, @docusaurus/plugin-content-docs@npm:^2.2.0":
+"@docusaurus/plugin-content-docs@npm:2.3.1, @docusaurus/plugin-content-docs@npm:^2.2.0, @docusaurus/plugin-content-docs@npm:^2.3.1":
   version: 2.3.1
   resolution: "@docusaurus/plugin-content-docs@npm:2.3.1"
   dependencies:
@@ -7924,6 +7924,7 @@ __metadata:
     "@docusaurus/core": 2.3.1
     "@docusaurus/mdx-loader": ^2.2.0
     "@docusaurus/module-type-aliases": 2.3.1
+    "@docusaurus/plugin-content-docs": ^2.3.1
     "@docusaurus/preset-classic": 2.3.1
     "@docusaurus/theme-common": ^2.2.0
     "@mdx-js/react": ^1.6.22
