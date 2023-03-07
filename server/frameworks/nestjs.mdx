@@ -4,38 +4,30 @@ sidebar_position: 1
 title: NestJS
 ---
 
-```mdx-code-block
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-```
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
 ### Install PeerServer
 
 If you are using [NestJS](https://docs.nestjs.com) with Express, integrating PeerServer is straightforward.
 Simply install PeerServer from npm:
 
-```mdx-code-block
 <Tabs>
 <TabItem value="yarn">
-```
 
 ```bash
 yarn add peer
 ```
 
-```mdx-code-block
 </TabItem>
 <TabItem value="npm">
-```
 
 ```bash
 npm install --save peer
 ```
 
-```mdx-code-block
 </TabItem>
 </Tabs>
-```
 
 ### PeerServer as a NestJS service
 
@@ -64,10 +56,12 @@ export class PeerServerService {
 Finally, add the `PeerServerService` as a [provider](https://docs.nestjs.com/providers#provider-registration) to your `app.module.ts`.
 
 ```ts
+// highlight-next-line
 import { PeerServerService } from './peer-server.service.js';
 
 @Module({
   ...
+// highlight-next-line
   providers: [PeerServerService, ...], // <--
 })
 export class AppModule {}

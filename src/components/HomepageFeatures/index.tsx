@@ -14,8 +14,9 @@ const FeatureList: FeatureItem[] = [
 		Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
 		description: (
 			<>
-				Docusaurus was designed from the ground up to be easily installed and
-				used to get your website up and running quickly.
+				PeerJS provides a simple peer-to-peer API that works across browsers and
+				platforms. You can create data channels and media streams with just a
+				few lines of code.
 			</>
 		),
 	},
@@ -24,18 +25,20 @@ const FeatureList: FeatureItem[] = [
 		Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
 		description: (
 			<>
-				Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-				ahead and move your docs into the <code>docs</code> directory.
+				PeerJS handles the hard parts of WebRTC for you, such as signaling,
+				connection management, and NAT traversal. You can focus on building your
+				app logic and user interface.
 			</>
 		),
 	},
 	{
-		title: "Powered by React",
+		title: "Powered by WebRTC",
 		Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
 		description: (
 			<>
-				Extend or customize your website layout by reusing React. Docusaurus can
-				be extended while reusing the same header and footer.
+				WebRTC is a modern web technology that enables real-time communication
+				between browsers. PeerJS leverages WebRTC to create secure and reliable
+				peer-to-peer connections.
 			</>
 		),
 	},
